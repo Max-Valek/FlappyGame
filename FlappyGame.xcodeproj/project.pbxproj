@@ -11,6 +11,10 @@
 		9DFA693429F712A000A6FBF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA693329F712A000A6FBF9 /* ContentView.swift */; };
 		9DFA693629F712A100A6FBF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DFA693529F712A100A6FBF9 /* Assets.xcassets */; };
 		9DFA693929F712A100A6FBF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DFA693829F712A100A6FBF9 /* Preview Assets.xcassets */; };
+		9DFA694229F712D400A6FBF9 /* BirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA694129F712D400A6FBF9 /* BirdView.swift */; };
+		9DFA694429F712FC00A6FBF9 /* PipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA694329F712FC00A6FBF9 /* PipeView.swift */; };
+		9DFA694729F7136500A6FBF9 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA694629F7136500A6FBF9 /* GameView.swift */; };
+		9DFA694A29F71F6C00A6FBF9 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA694929F71F6C00A6FBF9 /* StartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		9DFA693329F712A000A6FBF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9DFA693529F712A100A6FBF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DFA693829F712A100A6FBF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9DFA694129F712D400A6FBF9 /* BirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdView.swift; sourceTree = "<group>"; };
+		9DFA694329F712FC00A6FBF9 /* PipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipeView.swift; sourceTree = "<group>"; };
+		9DFA694629F7136500A6FBF9 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		9DFA694929F71F6C00A6FBF9 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				9DFA693129F712A000A6FBF9 /* FlappyGameApp.swift */,
+				9DFA694829F71F5B00A6FBF9 /* Start */,
+				9DFA694529F7135900A6FBF9 /* Game */,
+				9DFA694029F712BF00A6FBF9 /* Pipe */,
+				9DFA693F29F712B300A6FBF9 /* Bird */,
 				9DFA693329F712A000A6FBF9 /* ContentView.swift */,
 				9DFA693529F712A100A6FBF9 /* Assets.xcassets */,
 				9DFA693729F712A100A6FBF9 /* Preview Content */,
@@ -65,6 +77,38 @@
 				9DFA693829F712A100A6FBF9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9DFA693F29F712B300A6FBF9 /* Bird */ = {
+			isa = PBXGroup;
+			children = (
+				9DFA694129F712D400A6FBF9 /* BirdView.swift */,
+			);
+			path = Bird;
+			sourceTree = "<group>";
+		};
+		9DFA694029F712BF00A6FBF9 /* Pipe */ = {
+			isa = PBXGroup;
+			children = (
+				9DFA694329F712FC00A6FBF9 /* PipeView.swift */,
+			);
+			path = Pipe;
+			sourceTree = "<group>";
+		};
+		9DFA694529F7135900A6FBF9 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				9DFA694629F7136500A6FBF9 /* GameView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		9DFA694829F71F5B00A6FBF9 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				9DFA694929F71F6C00A6FBF9 /* StartView.swift */,
+			);
+			path = Start;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DFA694229F712D400A6FBF9 /* BirdView.swift in Sources */,
 				9DFA693429F712A000A6FBF9 /* ContentView.swift in Sources */,
+				9DFA694429F712FC00A6FBF9 /* PipeView.swift in Sources */,
+				9DFA694A29F71F6C00A6FBF9 /* StartView.swift in Sources */,
 				9DFA693229F712A000A6FBF9 /* FlappyGameApp.swift in Sources */,
+				9DFA694729F7136500A6FBF9 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

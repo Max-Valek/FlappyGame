@@ -9,9 +9,19 @@ import SwiftUI
 
 @main
 struct FlappyGameApp: App {
+    
+    @State var playGame: Bool = false
+    
     var body: some Scene {
+        
         WindowGroup {
-            ContentView()
+            
+            if !playGame {
+                StartView(playGame: $playGame)
+            } else {
+                GameView(playGame: $playGame)
+            }
+            
         }
     }
 }
