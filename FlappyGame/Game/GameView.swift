@@ -16,29 +16,33 @@ struct GameView: View {
     
     var body: some View {
         
-        ZStack {
+        if playGame {
             
-            Color.white.ignoresSafeArea()
-            
-            BirdView(yPosition: $yPosition, velocity: $velocity)
+            ZStack {
                 
-            PipeView()
-        }
-        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-        .onAppear {
-            let timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
+                Color.white.ignoresSafeArea()
                 
-                if yPosition <= 0 || yPosition >= UIScreen.main.bounds.height {
-                    playGame = false
-                } else {
-                    yPosition += velocity // update the y position based on the current velocity
-                    velocity += 1 // apply gravity
-                }
+                BirdView(yPosition: $yPosition, velocity: $velocity)
+                    
+                PipeView()
+                
             }
-            timer.fire()
-        }
-        .onTapGesture {
-            velocity = -jumpAmount // set the velocity to jump up
+            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+            .onAppear {
+                let timer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { _ in
+                    
+                    if yPosition <= 0 || yPosition >= UIScreen.main.bounds.height {
+                        playGame = false
+                    } else {
+                        yPosition += velocity // update the y position based on the current velocity
+                        velocity += 1 // apply gravity
+                    }
+                }
+                timer.fire()
+            }
+            .onTapGesture {
+                velocity = -jumpAmount // set the velocity to jump up
+            }
         }
     }
 }

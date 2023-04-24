@@ -15,6 +15,7 @@
 		9DFA694429F712FC00A6FBF9 /* PipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA694329F712FC00A6FBF9 /* PipeView.swift */; };
 		9DFA694729F7136500A6FBF9 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA694629F7136500A6FBF9 /* GameView.swift */; };
 		9DFA694A29F71F6C00A6FBF9 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA694929F71F6C00A6FBF9 /* StartView.swift */; };
+		9DFA694C29F7252F00A6FBF9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA694B29F7252F00A6FBF9 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		9DFA694329F712FC00A6FBF9 /* PipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipeView.swift; sourceTree = "<group>"; };
 		9DFA694629F7136500A6FBF9 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		9DFA694929F71F6C00A6FBF9 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		9DFA694B29F7252F00A6FBF9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				9DFA693129F712A000A6FBF9 /* FlappyGameApp.swift */,
+				9DFA694B29F7252F00A6FBF9 /* MainView.swift */,
 				9DFA694829F71F5B00A6FBF9 /* Start */,
 				9DFA694529F7135900A6FBF9 /* Game */,
 				9DFA694029F712BF00A6FBF9 /* Pipe */,
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DFA694229F712D400A6FBF9 /* BirdView.swift in Sources */,
+				9DFA694C29F7252F00A6FBF9 /* MainView.swift in Sources */,
 				9DFA693429F712A000A6FBF9 /* ContentView.swift in Sources */,
 				9DFA694429F712FC00A6FBF9 /* PipeView.swift in Sources */,
 				9DFA694A29F71F6C00A6FBF9 /* StartView.swift in Sources */,
